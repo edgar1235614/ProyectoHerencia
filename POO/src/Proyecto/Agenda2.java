@@ -14,6 +14,7 @@ public class Agenda2{
 		Persona datosP [] = new Persona[10000];
 		Telefono datosT [] = new Telefono[10000];
 		System.out.println("Cambiooooo");
+		System.out.println("Cambiooooo");
 		//datos por defecto de la clase personas
 		datosP[0] = new Persona("Pedro", "Sanchez", "pepe", 'H');
 		datosP[1] = new Persona("Marifer", "Lopez", "Fer", 'M');
