@@ -8,7 +8,7 @@ Este programa usa a clase Persona y la clase Telefono para usarla como
 un contacto el metodo toString de este y el get de la variable de clase Telefono
 y la variable de clase Persona.
 */
-
+package Proyecto;
 public class Contacto{
 	//atributos
 	private static int noContactos;
