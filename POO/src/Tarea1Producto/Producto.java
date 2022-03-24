@@ -1,13 +1,14 @@
-/* Declaración de la clase Producto.java contiene atributos nombre, origen y precio. Metodos: get/set para atributos y toString
+/* Declaración de la clase Producto.java contiene atributos nombre, origen 
+ * y precio. Metodos: get/set para atributos y toString
 Edgar Alan García Rosales 17/02/22  */
 package Tarea1Producto;
-public class Triangulo{
+public class Producto{
   //atributos
     private String nombre;
     private char origen;
     private int precio;
   //contructor con los 3 parametros para los atributos
-    public Triangulo(String nombre,char origen, int precio){
+    public Producto(String nombre,char origen, int precio){
     this.nombre =nombre;
     this.origen =origen;
     this.precio =precio;  
@@ -41,4 +42,5 @@ public class Triangulo{
     public void setPrecio(int precio){
       this.precio=precio;
     }
+   
 }//fin de la clase

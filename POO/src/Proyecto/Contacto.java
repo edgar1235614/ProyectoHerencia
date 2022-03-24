@@ -1,40 +1,82 @@
-package Proyecto;
+/*
+Integrantes del equipo:
+-Carrasco Medina Carlos Iván
+-Escalante Guadarrama Jorge Eduardo
+-García Rosales Edgar Alan
+Programación Orientada a Objetos 13/03/2022
+Este programa usa a clase Persona y la clase Telefono para usarla como
+un contacto el metodo toString de este y el get de la variable de clase Telefono
+y la variable de clase Persona.
+*/
+
 public class Contacto{
-	int noContactos = 0,noT = 0;
+	//atributos
+	private static int noContactos;
+	int noT = 0;
 	private Persona info;
-	private Telefono telefono1;
-	private Telefono telefono2;
+	private Telefono telefono;
+	private Telefono telefono2[];
 	
-	public Contacto(Persona info, Telefono telefono1){
+	//Constructores
+	public Contacto(Persona info, Telefono telefono){
 		this.info = info;
-		this.telefono1 = telefono1;
+		this.telefono = telefono;
 		noContactos++;
-		noT = 1;
+		this.noT = 1;
 	}	
-	
-	public Contacto(Persona info, Telefono telefono1, Telefono telefono2){
+	//constructor para dos telefonos
+	public Contacto(Persona info, Telefono[] telefono2){
 		this.info = info;
-		this.telefono1 = telefono1;
 		this.telefono2 = telefono2;
 		noContactos++;
-		noT = 2;
-	}	
-	
-	@Override
-	public String toString(){
-		if(noT == 1){
-			return info +"\t" +telefono1 +"\t";
-		}
-		else{
-			return info +"\t" +telefono1 +"\n \t \t \t \t" +telefono2;
-		}
+		this.noT = 2;
 	}
 	
+	//metodo toString de Contacto
+	@Override
+	public String toString(){
+		String devolver = "";
+		if(noT == 1){
+			devolver = info +"" +telefono;
+		}
+		else{
+			devolver = info +"" +telefono2[0];
+			for(int i = 1; i<telefono2.length; i++){
+				devolver = devolver +"\n \t \t \t \t \t " +telefono2[i];
+			}
+		}
+		return devolver;
+	}
+	
+	//metodos get para info(imformacion de la persona) y para llamar el telefono1
 	public Persona getInfo(){
 		return this.info;
 	}
 	
-	public Telefono getTelefono1(){
-		return this.telefono1;
+	public Telefono getTelefono(){
+		return this.telefono;
 	}
+	
+	public Telefono getTelefono(int i){
+		return this.telefono2[i];
+	}
+	
+	public int getTamanoT(){
+		return this.telefono2.length;
+	}
+	
+	//metodos get y set para el numero de contacto(noContactos)
+	public static int getNoContactos(){
+		return noContactos;
+	}
+	
+	public static void setNoContactos(int numero){
+		noContactos = numero;
+	}
+	
+	//metodo get para noT (numero de telefonos)
+	public int getNoT(){
+		return noT;
+	}
+
 }

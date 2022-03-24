@@ -23,10 +23,6 @@ public class MainPerro {
 		 }
 			for(Perro p:lista)
 			System.out.println(p);
-		
-		
-		
-	
 	}
 
 }

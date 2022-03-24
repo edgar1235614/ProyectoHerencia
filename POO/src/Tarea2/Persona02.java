@@ -1,13 +1,13 @@
 /* Declaración de la clase Persona.java contiene atributos nombre, sexo y edad. Metodos: get/set para atributos y toString
 Edgar Alan García Rosales 17/02/22  */
 package Tarea2;
-public class Persona{
+public class Persona02{
   //atributos
     private String nombre;
     private char sexo;
     private int edad;
   //contructor con los 3 parametros para los atributos
-    public Persona(String nombre,char sexo, int edad){
+    public Persona02(String nombre,char sexo, int edad){
     this.nombre =nombre;
     this.edad =edad;
     this.sexo =sexo;  

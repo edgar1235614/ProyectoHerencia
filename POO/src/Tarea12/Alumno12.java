@@ -3,14 +3,14 @@ package Tarea12;
  * sexo, calificación y métodos get y set para sus atributos.
  * Edgar Alan García Rosales 06/03/2022*/
 
-public class Alumno {
+public class Alumno12 {
 	  //atributos
 	    private String nombre;
 	    private String apellido;
 	    private char sexo;
 	    private int calificacion;
 	  //contructor con los 4 parametros para los atributos
-	    public Alumno(String nombre,String apellido,char sexo, int calificacion){
+	    public Alumno12(String nombre,String apellido,char sexo, int calificacion){
 	    this.nombre =nombre;
 	    this.apellido=apellido;
 	    this.calificacion =calificacion;

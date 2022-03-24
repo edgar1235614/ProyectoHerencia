@@ -1,10 +1,10 @@
 package Tarea12;
 
-public class Punto {
+public class Punto12 {
 private int x=0;
 private int y=0;
 public static int totalPuntos=0;
-Punto(int _x,int _y){
+Punto12(int _x,int _y){
 	x= _x;
 	y= _y;
 	totalPuntos++;
@@ -22,7 +22,7 @@ public void setPunto(int x, int y) {
 	this.x=x;
 	this.y=y;
 }
-public double pendiente(Punto p1,Punto p2) {
+public double pendiente(Punto12 p1,Punto12 p2) {
 	double pendiente=0;
 	double a=0;
 	double b=0;
@@ -33,7 +33,6 @@ int y2=p2.getY();
 a=(y2-y1);
 b=(x2-x1);
 pendiente= a/b;
-System.out.println(pendiente); 
 	return pendiente;
 }
 public String toString() {

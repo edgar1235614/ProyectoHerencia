@@ -10,10 +10,9 @@ tipo Persona y almacénalos en una lista
 – Nombre de la persona mas joven
 – Total de adultos mayores (de 60 o mas años*/
 import java.util.ArrayList;
-import Proyecto.Keyboard;
 public class arreglo10p {
 	public static void main(String[]args) {
-	ArrayList<Persona>lista=new ArrayList<>(10);
+	ArrayList<Persona02>lista=new ArrayList<>(10);
 	String nombre="";
 	char sexo='x';
 	int edad=0;
@@ -25,7 +24,7 @@ public class arreglo10p {
 		sexo=Keyboard.readChar();
 		System.out.println("Edad de la persona: ");
 		edad=Keyboard.readInt();
-		Persona persona = new Persona(nombre,sexo,edad);
+		Persona02 persona = new Persona02(nombre,sexo,edad);
 		lista.add(persona);
 	}
 	//Calcular total de mujeres

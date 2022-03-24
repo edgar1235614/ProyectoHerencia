@@ -1,12 +1,12 @@
 package Tarea1Triangulo;
 public class Triangulo {
 		  //atributos
-		    private String nombre;
+		    private String tipo;
 		    private char ladosIguales;
 		    private int area;
 		  //contructor con los 3 parametros para los atributos
 		    public Triangulo(String nombre,char ladosIguales, int area){
-		    this.nombre =nombre;
+		    this.tipo =nombre;
 		    this.ladosIguales =ladosIguales;
 		    this.area= area;
 		
@@ -14,15 +14,15 @@ public class Triangulo {
 
 		    @Override
 		    public String toString() {
-		      return nombre+"\t"+ladosIguales+"\t"+area;
+		      return tipo+"\t"+ladosIguales+"\t"+area;
 		    }
 		    //Obtiene el nombre del triangulo
 		    public String getNombre(){
-		      return this.nombre;
+		      return this.tipo;
 		    }
 		    //cambia el nombre del triangulo
 		    public void setNombre(String nombre){
-		      this.nombre=nombre;
+		      this.tipo=nombre;
 		    }
 		    //Obtiene cuantos lados iguales tiene el triangulo
 		    public char getLadosIguales(){

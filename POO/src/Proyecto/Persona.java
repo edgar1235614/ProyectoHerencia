@@ -1,10 +1,10 @@
-/*Declaracion de la clase Persona.java contiene atributos nombre, 
+/*  Declaración de la clase Persona.java contiene atributos nombre, 
 sexo y edadMetodos: get/set para los atributos y toString*/
 package Proyecto;
 public class Persona{
 
 	// atributos private 
-	String nombre, apellido, alias;
+	String nombre, apellido, alias;	
 	private char sexo;
 	
 	// constructor con los 3 parametros para los atributos   
@@ -17,7 +17,7 @@ public class Persona{
 	
 	@Override
 	public String toString(){
-		return nombre+" \t" +apellido+" \t" +alias +" \t" +sexo;
+		return nombre+" \t \t" +apellido+" \t" +alias +" \t" +sexo;
 	}
 	// Obtiene el nombre de la persona
 	public String getNombre(){

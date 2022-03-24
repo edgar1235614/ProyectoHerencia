@@ -1,5 +1,4 @@
 package Tarea1Triangulo;
-
 import java.util.ArrayList;
 public class ListaTriangulos {
 	public static void main(String[] args) {
