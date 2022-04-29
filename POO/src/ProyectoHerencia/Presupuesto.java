@@ -1,9 +1,9 @@
 package ProyectoHerencia;
 
 public class Presupuesto {
-private int ProductoBruto;
-private int ProductoIVA;
-private int IVA;
-
+  public void calcularPresupuesto() {
+	
+	
+}
 
 }
